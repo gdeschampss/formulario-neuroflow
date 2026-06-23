@@ -5,6 +5,7 @@ import StepSelection from './components/StepSelection';
 import StepContact from './components/StepContact';
 import StepSuccess from './components/StepSuccess';
 import { BackgroundLines } from './components/ui/animated-svg-background';
+import { FaWhatsapp } from 'react-icons/fa';
 import logoImg from './assets/logo2.png';
 import './index.css';
 
@@ -102,6 +103,9 @@ function App() {
                 </h1>
                 <p className="hero-subtitle">
                   Criamos ecossistemas digitais robustos com Inteligência Artificial integrada, CRM personalizado e websites de alta conversão para alavancar os resultados da sua empresa.
+                </p>
+                <p className="hero-mobile-question">
+                  O que podemos construir para você hoje? Preencha o formulário
                 </p>
                 <div className="hero-bullets">
                   <div className="hero-bullet">
@@ -304,6 +308,17 @@ function App() {
         <footer className="landing-footer">
           <p>© 2026 NeuroFlow. Todos os direitos reservados. Impulsionando negócios com IA e Automação.</p>
         </footer>
+
+        {/* Floating WhatsApp Button */}
+        <a
+          href="https://wa.me/554796732918?text=Olá! Estava navegando no site da NeuroFlow e gostaria de falar diretamente com um especialista."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-float-btn"
+          aria-label="Falar com especialista no WhatsApp"
+        >
+          <FaWhatsapp size={28} />
+        </a>
       </div>
     </BackgroundLines>
   );

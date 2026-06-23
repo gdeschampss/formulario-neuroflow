@@ -8,8 +8,12 @@ const StepWelcome = ({ nextStep, updateFormData }) => {
 
   return (
     <>
-      <h2 className="step-title">Bem-vindo à NeuroFlow!</h2>
-      <p className="step-subtitle">O que podemos construir para o seu negócio hoje?</p>
+      <h2 className="step-title" style={{ fontSize: '1.4rem', lineHeight: '1.4', marginBottom: '12px' }}>
+        👉 Quero melhorar minhas vendas e operação.
+      </h2>
+      <p className="step-subtitle" style={{ fontSize: '0.95rem', marginBottom: '24px' }}>
+        Preencha os dados e fale com um especialista
+      </p>
 
       <div className="options-grid">
         <button className="option-btn" onClick={() => handleSelect('servicos')}>
