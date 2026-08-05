@@ -110,18 +110,18 @@ const SVG = ({
         <motion.path
           d={path}
           stroke={colors[idx]}
-          strokeWidth="2.3"
+          strokeWidth="2.5"
           strokeLinecap="round"
           variants={pathVariants}
           initial="initial"
           animate="animate"
           transition={{
-            duration: svgOptions?.duration || (isMobile ? 12 : 10),
+            duration: svgOptions?.duration || (isMobile ? 7 : 6),
             ease: "linear",
             repeat: Infinity,
             repeatType: "loop",
-            delay: Math.floor(Math.random() * (isMobile ? 6 : 10)),
-            repeatDelay: Math.floor(Math.random() * 10 + 2),
+            delay: idx * 0.25,
+            repeatDelay: (idx % 3) * 0.5 + 0.5,
           }}
           key={`path-first-${idx}`}
         />
@@ -131,18 +131,18 @@ const SVG = ({
         <motion.path
           d={path}
           stroke={colors[idx]}
-          strokeWidth="2.3"
+          strokeWidth="2.5"
           strokeLinecap="round"
           variants={pathVariants}
           initial="initial"
           animate="animate"
           transition={{
-            duration: svgOptions?.duration || 10,
+            duration: svgOptions?.duration || 7,
             ease: "linear",
             repeat: Infinity,
             repeatType: "loop",
-            delay: Math.floor(Math.random() * 10),
-            repeatDelay: Math.floor(Math.random() * 10 + 2),
+            delay: idx * 0.3 + 0.15,
+            repeatDelay: (idx % 4) * 0.5 + 0.5,
           }}
           key={`path-second-${idx}`}
         />
